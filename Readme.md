@@ -251,7 +251,9 @@ finsum_district_df = finsum_district_df[["Total Schools",
                                    "Overall Passing Rate"]]
 finsum_district_df = finsum_district_df.round(2)
 
-##-- OUTPUT ---##
+#################################
+##--         OUTPUT         ---##
+#################################
 finsum_district_df
 ```
 
@@ -2325,7 +2327,9 @@ finsum_byschool_df.rename(columns={"school":"School Name",
 finsum_byschool_df.drop(["School ID","type","Student ID","stud_passed_math","stud_passed_read"],axis=1,inplace=True)
 finsum_byschool_df = finsum_byschool_df.round(2)
 
-##----- OUTPUT -------##
+#################################
+##--         OUTPUT         ---##
+#################################
 finsum_byschool_df
 ```
 
@@ -2561,7 +2565,10 @@ finsum_byschool_df
 top5_perfschools_df=finsum_byschool_df.sort_values(['Overall Passing Rate'],ascending=False).head(5)
 top5_perfschools_df = top5_perfschools_df.round(2)
 
-##----- OUTPUT -----##
+
+#################################
+##--         OUTPUT         ---##
+#################################
 top5_perfschools_df
 ```
 
@@ -2677,7 +2684,9 @@ top5_perfschools_df
 bott5_perfschools_df=finsum_byschool_df.sort_values(['Overall Passing Rate'],ascending=True).head(5)
 bott5_perfschools_df = bott5_perfschools_df.round(2)
 
-##---- OUTPUT -----##
+#################################
+##--         OUTPUT         ---##
+#################################
 bott5_perfschools_df
 ```
 
@@ -2795,7 +2804,10 @@ grde_sum_df=grpbygrade_df.mean()
 math_grd_sum_df=grde_sum_df[["school","grade","math_score"]]
 math_grd_sum_df.rename(columns={"school":"School Name","grade":"Grade","math_score":"Average Math Score"},inplace = True)
 
-##----- OUTPUT -----##
+
+#################################
+##--         OUTPUT         ---##
+#################################
 math_grd_sum_df
 ```
 
@@ -3212,7 +3224,10 @@ math_grd_sum_df
 read_grd_sum_df=grde_sum_df[["school","grade","reading_score"]]
 read_grd_sum_df.rename(columns={"school":"School Name","grade":"Grade","reading_score":"Average Reading Score"},inplace = True)
 
-##---- OUTPUT ----##
+
+#################################
+##--         OUTPUT         ---##
+#################################
 read_grd_sum_df
 ```
 
@@ -5251,7 +5266,10 @@ spendmrg2_df.rename(columns={"size":"Total Students"},inplace=True)
 score_by_spend_df=spendmrg2_df
 score_by_spend_df.drop(["Total Students","MathPassed","ReadPassed"],axis=1,inplace=True)
 
-##----- OUTPUT ------##
+
+#################################
+##--         OUTPUT         ---##
+#################################
 score_by_spend_df
 ```
 
@@ -7172,7 +7190,10 @@ sizemrg2_df.rename(columns={"size":"Total Students"},inplace=True)
 score_by_size_df=sizemrg2_df
 score_by_size_df.drop(["Total Students","MathPassed","ReadPassed"],axis=1,inplace=True)
 
-##---- OUTPUT ----##
+
+#################################
+##--         OUTPUT         ---##
+#################################
 score_by_size_df
 ```
 
@@ -8980,7 +9001,9 @@ typemrg2_df["Overall Passing Rate"]=(typemrg2_df["% Passing Math"]+typemrg2_df["
 typemrg2_df.rename(columns={"size":"Total Students"},inplace=True)
 score_by_type_df=typemrg2_df
 
-##------ OUTPUT ------##
+#################################
+##--         OUTPUT         ---##
+#################################
 score_by_type_df
 ```
 
